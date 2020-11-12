@@ -1,3 +1,210 @@
-header {
-backgound-color: blue;
+body {
+  margin: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --------header---------*/
+.main-header{
+  background-color: #f3f7f9;
+}
+.header-top {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.shop-heading {
+ color: #ee3643;
+}
+
+.header-phone {
+  color: #ee3643;
+  border: 2px #ffffff solid;
+}
+
+.user-menu {
+  list-style: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-navigation a,
+.header-navigation {
+  color: #ffffff;
+  background-color: #32425c
+}
+/* --------main---------*/
+/* --------promo-block---------*/
+.blocks-list {
+  color: #ffffff;
+}
+
+.blocks-item {
+  width: 300px;
+  height: 130px;
+}
+
+.item-link {
+  width: 135px;
+  height: 38px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+
+}
+
+.slider-link {
+  width: 195px;
+  height: 38px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-radius: 2px;
+}
+
+.block-materials {
+  background-color: #ffbf47;
+}
+
+.block-Tool {
+  background-color: #3bbce3;
+}
+
+.block-Technic {
+  background-color: #dc91d8;
+}
+
+.block-sale {
+  background-color: #8ed78f;
+}
+
+.block-delivery {
+  background-color: #ffc047;
+}
+
+/*-----popular-products----- */
+.section-container {
+  width: 940px;
+  height: 89px;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #f9f5f0;
+}
+
+.section-paragraph {
+  width: 253px;
+  height: 38px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+/*-----popular-products /header----- */
+
+.products-item {
+  width: 220px;
+  height: 318px;
+  font-size: 18px;
+  color: #000000;
+  border: 1px #eaeaea solid;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.product-old-price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.product-price {
+  position: absolute;
+  width: 141px;
+  height: 38px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #ee3643;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+
+/*-----popular-manufacturer----- */
+.manufacturer-image {
+  width: 220px;
+  height: 145px;
+  list-style: none;
+  border: 1px #eaeaea solid;
+
+}
+/*-----services----- */
+.services-container {
+  background-color: #f4f7f9;
+}
+
+.services-heading {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.services-heading-description {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item {
+  width: 261px;
+  height: 61px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: #32425c;
+  border: 1px #405069 solid;
+}
+
+.service-current {
+  color: #32425c;
+  border: none;
+  background-color: #ffffff;
+}
+
+.service-name {
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.service-description {
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+.credit-button {
+  width: 195px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ff5357;
+  border-radius: 5px;
 }
