@@ -87,8 +87,8 @@ img {
 .navigation-list {
   list-style: none;
 }
-
-/* --------main---------*/
+/*---------/header-----*/
+/* --------MAIN---------*/
 /* --------promo-block---------*/
 .blocks-list {
   color: #ffffff;
@@ -145,14 +145,13 @@ img {
   background-color: #f9f5f0;
 }
 
-.section-paragraph {
+.section-btn {
   width: 253px;
   height: 38px;
   font-size: 18px;
   color: #ffffff;
   background-color: #ee3643;
 }
-/*-----popular-products /header----- */
 
 .products-item {
   width: 220px;
@@ -302,7 +301,7 @@ img {
   background-color: #ee3643;
   border-radius: 5px;
 }
-/*-----footer----- */
+/*--------FOOTER------- */
 .footer {
   font-size: 18px;
   line-height: 24px;

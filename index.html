@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-1.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -12,7 +15,7 @@
         <img src="img/technomart-logo.png" alt="Логотип интернет-магазин строительных материалов Техномарт">
         <p><img src="img/icon-search.svg" alt="иконка поиска"><label for="search">Поиск:<input type="search" name="search"></label></p>
         <p><img src="img/icon-bookmark.svg" alt="иконка закладка">Закладки</p>
-        <p><img src="img/cart-icon.svg" alt="иконка корзины">Корзина</p>
+        <p><img src="img/cart-icon.svg" alt="иконка корзины">Корзина: 0</p>
         <p>Оформить заказ</p>
       </div>
       <div class="header-middel">
@@ -20,7 +23,7 @@
           строительных материалов<br>
           и инструментов для ремонта</h1>
         <div class="header-phone"><img src="img/icon-phone.svg" alt="иконка телефона">+7(812) 555-05-55</div>
-        <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+        <p class="header-adress">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
           <ul class="user-menu">
             <li>
               <div class="header-login">
@@ -36,7 +39,7 @@
           </ul>
       </div>
        <nav class="header-navigation">
-         <ul>
+         <ul class="navigation-list">
            <li><a href="#">Главная</a></li>
            <li><a href=""></a>Компания</li>
            <li><a href=""></a>Каталог</li>
@@ -143,9 +146,9 @@
 
         <h2 class="section-heading">Популярные товары:</h2>
 
-        <div class="section-paragraph">
-          <p>Все популярные товары</p>
-        </div>
+        <a href="#" class="section-btn">
+          Все популярные товары
+        </a>
       </div>
           <ul class="popular-products">
             <li>
@@ -202,9 +205,9 @@
 
         <h2 class="section-heading">Популярные производители:</h2>
 
-        <div class="section-paragraph">
-          <p>все производители</p>
-        </div>
+        <a href="#" class="section-btn">
+          все производители
+        </a>
       </div>
           <ul class="manufacturers">
             <li class="manufacturer-image">
@@ -292,7 +295,7 @@
               <img src="img/car-delivery.png" alt="изображение машины">
             </div>
           </div>
-         <div class="service-delivery">
+         <div class="service-garanty">
            <h3 class="service-name">Гарантия</h3>
            <p class="service-description">
              Если купленный у нас товар поломается или заискрит,<br>
@@ -320,40 +323,68 @@
          </div>
      </section>
 
-     <section class="abaout-us">
-       <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
-       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-         <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-         Техномарт работает со многим транспортными компаниями:</p>
-         <ul>
-           <li>Деловые линии</li>
-           <li>Автотрейдинг</li>
-           <li>ЖелДорЭкспедиция</li>
-         </ul>
-         <a href="#">Подробнее о компании</a>
-         <p>Контакты</p>
-         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-         <button type="button"><img src="img/map.png" alt="карта"></button>
-         <form action="" method="post">
-           <button type="button">Заблудились? Напишите нам!</button><br>
-           <label for="name">Ваше имя</label><br>
-           <input type="text" id="name" placeholder="Имя Фамилия"><br>
-           <label for="email">Ваш e-mail</label><br>
-           <input type="email" id="email" placeholder="email@example.com"><br>
-           <label for="textarea">Текст письма</label><br>
-           <textarea type="textarea" id="textarea" rows="5"></textarea><br>
-          <button type="submit">Отправить</button>
-         </form>
+     <section class="about-us">
+       <h2 class="about-heading">КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+       <p class="about-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+       </p>
+       <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+         Техномарт работает со многим транспортными компаниями:
+       </p>
+       <ul class="about-partners">
+         <li class="partners-list">Деловые линии</li>
+         <li class="partners-list">Автотрейдинг</li>
+         <li class="partners-list">ЖелДорЭкспедиция</li>
+       </ul>
+       <div class="about-company">
+         <a href="#">
+           Подробнее о компании
+         </a>
+       </div>
+      </section>
+      <section class="contacts">
+         <h2 class="about-heading">Контакты</h2>
+         <div class="popup popup-map">
+           <p class="about-paragraph">
+             Вы можете забрать товар сами, заехав в наш офис:
+           </p>
+           <img src="img/map.png" alt="г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8">
+           <button class="map-popup" type="button">
+             Закрыть
+           </button>
+         </div>
+         <div class="popup popup-write-us">
+           <button  class="write-us" type="button" name="map-button" id="map-button">
+             Заблудились? Напишите нам!
+           </button>
+           <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+             <label for="name">
+               Ваше имя
+             </label><br>
+             <input type="text" id="name" placeholder="Имя Фамилия"><br>
+             <label for="email">
+               Ваш e-mail
+             </label><br>
+             <input type="email" id="email" placeholder="email@example.com"><br>
+             <label for="textarea">
+               Текст письма
+             </label><br>
+             <textarea type="textarea" id="textarea" rows="5">
+             </textarea><br>
+             <input class="write-us-submit" type="submit" value="Отправить">
+             <button class="write-us-close" type="button">
+               Закрыть
+             </button>
+           </form>
+         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <img src="img/technomart-logo.png" width="100" height="30" alt="Логотип Техномарт">
+    <footer class="footer">
+      <img src="img/technomart-logo.png" width="220" height="68" alt="Логотип Техномарт">
       <p class="footer-contacts">
         г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8<br>
         +7(812)555-05-55
       </p>
-       <div class="main-footer-navigation">
          <ul class="footer-navigation">
            <li><a href=""></a>Компания</li>
            <li><a href=""></a>Новости</li>
@@ -361,29 +392,29 @@
            <li><a href=""></a>Доставка</li>
            <li><a href=""></a>Контакты</li>
          </ul>
-         <ul class="footer-navigation-double">
+         <ul class="footer-sections">
            <li><a href=""></a>Материалы</li>
            <li><a href=""></a>Техника</li>
            <li><a href=""></a>Инструмент</li>
            <li><a href=""></a>Спецпредложения</li>
          </ul>
-       </div>
     </footer>
     <footer class="footer-copyrights">
       <p>&#169;2010-2019 Компания "Техномарт"<br>
-        Все права защищены</p>
+        Все права защищены
+      </p>
       <div>
         <ul>
-          <li><a class="social-buttom" href="https://vk.com/" aria-label="ВКонтакте"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
-          <li><a class="social-buttom" href="https://facebook.com/" aria-label="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-          <li><a class="social-buttom" href="https://instagram.com/" aria-label="Инстаграм"><img src="img/insta-icon.svg" alt="Инстаграмм"></a></li>
+          <li class="footer-social"><a class="social-buttom" href="https://vk.com/" aria-label="ВКонтакте"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+          <li class="footer-social"><a class="social-buttom" href="https://facebook.com/" aria-label="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+          <li class="footer-social"><a class="social-buttom" href="https://instagram.com/" aria-label="Инстаграм"><img src="img/insta-icon.svg" alt="Инстаграмм"></a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
-        <b>Обратная связь:</b> <a class="emeil" href="">mail@htmlacademy.ru</a>
+      <p>
+        <b>Обратная связь:</b><br> <a class="footer-contacts" href="">mail@htmlacademy.ru</a>
       </p>
-      <p class="footer-copyright">
-        <b>Разработано-</b> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      <p>
+        <b>Разработано-</b><a class="footer-contacts" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
 
 
