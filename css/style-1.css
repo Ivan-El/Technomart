@@ -13,16 +13,12 @@ body {
 /*font-family: 'Cuprum', sans-serif;
 font-family: 'PT Sans', Arial, sans-serif;*/
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 img {
   max-width: 100%;
 }
 
 /* --------header---------*/
+
 .main-header{
 
   background-color: #f3f7f9;
@@ -33,6 +29,78 @@ img {
   color: #ffffff;
   background-color: #293449;
 }
+
+.header-top:hover {
+  background-color: #32425c;
+}
+
+.header-top-form-search {
+
+}
+
+.header-top-search {
+  padding-left: 30px;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #293449;
+  border: none;
+}
+
+.header-top-search:hover {
+  background-color: #212a3a;
+}
+
+input.header-top-search:focus {
+  background-color: #ffffff;
+  color: #888888:
+}
+
+.header-top-item {
+  width: 150px;
+  height: 42px;
+}
+
+.header-top-item:hover {
+  background-color: #212a3a;
+}
+
+.header-top-item:active {
+  background-color: #161d29
+}
+
+.header-top-bookmark {
+  background-image: url(../img/icon-bookmark.svg);
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-color: #293449;
+}
+
+.header-top-cart {
+  background-image: url(../img/cart-icon.svg);
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-color: #293449;
+}
+
+.cart-fill {
+  background-color: #ee3643;
+}
+
+.header-top-order {
+  background-color: #63a63e;
+}
+
+.header-top-item.header-top-order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-top-item.header-top-order:active {
+  background-color: #518534;
+}
+
 /*---header-middel----*/
 .header-middel {
   font-size: 21px;
@@ -49,11 +117,14 @@ img {
 .header-phone {
   width: 270px;
   height: 45px;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 21px;
+  line-height: 21px;
   color: #ee3643;
   text-align: center;
   border: 2px #ffffff solid;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
 }
 
 .header-adress {
@@ -61,15 +132,64 @@ img {
   line-height: 24px;
 }
 
+.user-form-authorized {
+  width: 299px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  padding-left: 25px;
+  background: url(../img/icon-user.svg) no-repeat 0% 50%,
+}
+
+.user-btn {
+  background-color: #ffffff;
+  border: none;
+}
+
+.logout-btn {
+  background-color: #ffffff;
+  border: none;
+}
+
 .user-menu {
   list-style: none;
   color: #000000;
 }
 
+.user-menu.user-authorized {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+.user-authorized-li {
+  list-style: disc;
+}
+
+.user-menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.user-menu a:hover {
+  color: #ee3643;
+}
+
+.user-menu a:active {
+  color: #b2b2b2;
+}
+
 .header-login {
   width: 121px;
   height: 45px;
+  text-align: center;
   background-color: #ffffff;
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 14px 14px;
 }
 
 .header-registration {
@@ -78,62 +198,164 @@ img {
   background-color: #ffffff;
 }
 /*-----header-navigation-----*/
-.header-navigation a,
+
 .header-navigation {
+  font-size: 17px;
+  line-height: 17px;
   color: #ffffff;
   background-color: #32425c
+}
+
+.header-navigation a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-navigation li {
+  height: 60px;
+}
+
+.header-navigation a:hover {
+  background-color: #293449;
+}
+
+.header-navigation a:active {
+  background-color: #293449;
+  color: #8e939c;
 }
 
 .navigation-list {
   list-style: none;
 }
-/*---------/header-----*/
+
 /* --------MAIN---------*/
 /* --------promo-block---------*/
-.blocks-list {
+.blocks-list,
+.blocks-list a {
   color: #ffffff;
+}
+
+.blocks-list a {
+  text-decoration: none;
 }
 
 .blocks-item {
   width: 300px;
-  height: 130px;
+  height: 123px;
+}
+
+.item-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
 }
 
 .item-link {
   width: 135px;
   height: 38px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
   border-radius: 2px;
-
 }
 
-.slider-link {
-  width: 195px;
-  height: 38px;
-  text-transform: uppercase;
-  background-color: #ee3643;
-  border-radius: 2px;
+.item-link:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.item-link:active {
+  background-color: rgba(0,0,0,0.5);
 }
 
 .block-materials {
-  background-color: #ffbf47;
+  color: #ffffff;
+  background-color: rgba(246,178,45,0.9);
+  background-image: url("../img/icon-1.svg");
+  background-position: 213px 31px;
+  background-repeat: no-repeat;
+}
+
+.new-flag {
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  z-index: 1;
 }
 
 .block-Tool {
+  color: #ffffff;
   background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
+  background-position: 197px 33px;
+  background-repeat: no-repeat;
 }
 
 .block-Technic {
+  color: #ffffff;
   background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
+  background-position: 191px 31px;
+  background-repeat: no-repeat;
+}
+
+.slider-list li {
+  width: 620px;
+  height: 266px;
+}
+.slide-drill{
+  background-image: url(../img/drel-man.jpg);
+  background-color: #000000;
+}
+
+.slide-perforator {
+  background-image: url(../img/perforator-man.jpg);
+  background-color: #000000;
+}
+.slide-name {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0px;
+  color: #ffffff;
+  padding: 27px 0px 0px 24px;
+}
+
+.slide-slogan {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 0px;
+  padding: 0px 0px 0px 24px;
+}
+
+.menu-btn {
+  height: 38px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+.slider-link {
+  width: 195px;
 }
 
 .block-sale {
+  color: #ffffff;
   background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
+  background-position: 196px 26px;
+  background-repeat: no-repeat;
 }
 
 .block-delivery {
+  color: #ffffff;
   background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
+  background-position: 191px 32px;
+  background-repeat: no-repeat;
 }
 
 /*-----popular-products----- */
@@ -141,48 +363,68 @@ img {
   width: 940px;
   height: 89px;
   font-size: 30px;
+  color: #32425c;
   text-transform: uppercase;
   background-color: #f9f5f0;
 }
 
 .section-btn {
   width: 253px;
-  height: 38px;
-  font-size: 18px;
+  background-color: #ee3643;
+}
+
+.section-btn a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.popular-products {
+  list-style: none;
 }
 
 .products-item {
   width: 220px;
   height: 318px;
-  font-size: 18px;
-  color: #000000;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
   border: 1px #eaeaea solid;
+  padding-bottom: 21px;
+}
+
+.products-item a {
+  text-decoration: none;
 }
 
 .product-name {
   font-size: 18px;
-  font-weight: bold;
   line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+
 }
 
 .product-old-price {
   font-size: 17px;
-  font-weight: bold;
   line-height: 18px;
   color: #a9a9a9;
+  text-decoration: line-through;
 }
 
 .product-price {
-  position: absolute;
+  margin: 13px 36px 21px 43px;
   width: 141px;
   height: 38px;
   font-size: 17px;
-  font-weight: bold;
+  color: #ffffff;
   line-height: 18px;
   background-color: #ee3643;
-  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }
 
 
@@ -192,6 +434,8 @@ img {
   height: 145px;
   list-style: none;
   border: 1px #eaeaea solid;
+  text-align: center;
+
 
 }
 /*-----services----- */
@@ -199,20 +443,25 @@ img {
   background-color: #f4f7f9;
 }
 
-.services-heading {
+.services-heading,
+.about-heading {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.services-heading-description {
+.services-heading-description,
+.service-description,
+.about-paragraph {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
 
 .services-list {
-    list-style: none;
+  list-style: none;
 }
 
 .service-item {
@@ -221,6 +470,7 @@ img {
   color: #ffffff;
   font-size: 21px;
   line-height: 30px;
+  font-weight: bold;
   background-color: #32425c;
   border: 1px #405069 solid;
 }
@@ -233,34 +483,24 @@ img {
 
 .service-name {
   font-size: 36px;
-  line-height: 24px;
-}
-
-.service-description {
-  font-size: 13px;
-  line-height: 24px;
-
+  line-height: 36px;
+  color: #32425c;
 }
 
 .credit-button {
   width: 195px;
-  height: 38px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
   background-color: #ff5357;
   border-radius: 5px;
 }
-/*-----about-us----- */
-.about-heading{
-  font-size: 30px;
-  line-height: 30px;
+
+.credit-button a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.about-paragraph {
-  font-size: 13px;
-  line-height: 24px;
-}
+/*-----about-us----- */
 
 .about-partners {
   font-size: 18px;
@@ -271,23 +511,40 @@ img {
   list-style: none;
 }
 
+.partner-line {
+  width: 25px;
+  border-top: 2px solid #ee3643;
+}
+
 .about-company {
   width: 220px;
-  height: 38px;
-  color: #ffffff;
   background-color: #ee3643;
   border-radius: 5px;
+}
+
+.about-company a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .write-us {
   width: 300px;
-  height: 38px;
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 5px;
 }
 
+.write-us a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .popup-write-us {
+  display: none;
   width: 620px;
   height: 430px;
   border-top-width: 7px;
@@ -336,5 +593,6 @@ img {
 }
 
 .footer-contacts {
+  text-decoration: none;
   color: #ffd180;
 }
