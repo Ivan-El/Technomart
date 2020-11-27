@@ -229,6 +229,57 @@ input.header-top-search:focus {
 }
 
 /* --------MAIN---------*/
+
+/* --------breadcrumbs---------*/
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.home-crumbs {
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+}
+
+.right-small {
+  width: 8px;
+  height: 12px;
+  background-image: url(../img/icon-right-small.svg);
+}
+/* --------filter---------*/
+.catalog-filter-form {
+  width: 220px;
+}
+.head-inner {
+  width: 940px;
+  height: 89px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #f2f6f8;
+}
+
+.price-output{
+  background-color: #f7f3ec;
+  width: 95px;
+  height: 38px;
+}
+
+.price-scope {
+  width: 16px;
+  border-top: 1px solid #000000;
+}
 /* --------promo-block---------*/
 .blocks-list,
 .blocks-list a {
@@ -446,6 +497,7 @@ input.header-top-search:focus {
 .services-heading,
 .about-heading {
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -499,7 +551,10 @@ input.header-top-search:focus {
   color: #ffffff;
   text-decoration: none;
 }
-
+/* ---about-product-----*/
+.about-product {
+  background-color: #f2f6f8;
+}
 /*-----about-us----- */
 
 .about-partners {
