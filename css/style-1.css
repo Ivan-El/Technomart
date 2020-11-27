@@ -17,6 +17,14 @@ img {
   max-width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* --------header---------*/
 
 .main-header{
@@ -244,21 +252,13 @@ input.header-top-search:focus {
   text-decoration: none;
 }
 
-.home-crumbs {
-  width: 14px;
-  height: 12px;
-  background-image: url(../img/icon-home.svg);
-}
-
 .right-small {
   width: 8px;
   height: 12px;
   background-image: url(../img/icon-right-small.svg);
 }
 /* --------filter---------*/
-.catalog-filter-form {
-  width: 220px;
-}
+
 .head-inner {
   width: 940px;
   height: 89px;
@@ -268,6 +268,52 @@ input.header-top-search:focus {
   text-transform: uppercase;
   font-weight: normal;
   background-color: #f2f6f8;
+}
+
+.catalog-filter,
+.catalog-sort {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-filter-heading,
+.sort-heading {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.catalog-filter-heading.form-heading {
+  width: 220px;
+  height: 38px;
+}
+
+.catalog-filter-form {
+  width: 220px;
+}
+
+.filter-fieldset {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.filter-legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/*-----price----*/
+
+.input-price-range {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
 }
 
 .price-output{
@@ -280,6 +326,96 @@ input.header-top-search:focus {
   width: 16px;
   border-top: 1px solid #000000;
 }
+/*-----manufacturer------*/
+.filter-option {
+  list-style: none;
+}
+
+/*----battery-------*/
+
+
+.filter-form-button {
+  width: 140px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+/*---------sort-----*/
+.catalog-filter-heading.sort-heading {
+  width: 700px;
+}
+
+.sort-item {
+  list-style: none;
+}
+
+.sort-item a {
+  color: #c4c1bb;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-item a:hover {
+  color: #000000;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-item a:active {
+  color: #ee3643;
+  border: none;
+}
+
+.sort-item .sort-current a {
+  color: #ee3643;
+  border: none;
+}
+
+.red-triangle-top {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 11px solid #c5c5c5;
+}
+
+.red-triangle-bottom {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 11px solid #c5c5c5;
+}
+
+.current-triangle{
+  border-top-color: #ee3643;
+  border-bottom-color: #ee3643;
+}
+
+.red-triangle-top:hover,
+.red-triangle-bottom:hover {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
+}
+
+.red-triangle-top:active,
+.red-triangle-bottom:active {
+  border-top-color: #ee3643;
+  border-bottom-color: #ee3643;
+}
+/*-----pagination-list------*/
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  width: 38px;
+  border: 1px solid #e5e5e5;
+}
+
 /* --------promo-block---------*/
 .blocks-list,
 .blocks-list a {
@@ -322,17 +458,28 @@ input.header-top-search:focus {
 
 .block-materials {
   color: #ffffff;
-  background-color: rgba(246,178,45,0.9);
   background-image: url("../img/icon-1.svg");
   background-position: 213px 31px;
   background-repeat: no-repeat;
+  background-color: rgba(246,178,45,0.9);
+
 }
 
 .new-flag {
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
-  z-index: 1;
+position: absolute;
+top: 7px;
+right: -80px;
+width: 200px;
+font-size: 16px;
+line-height: 28px;
+font-family: "PT Sans Narrow", sans-serif;
+text-align: center;
+color: #f0f0f0;
+text-transform: lowercase;
+letter-spacing: 1px;
+background: #ff5357;
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 .block-Tool {
@@ -649,5 +796,5 @@ input.header-top-search:focus {
 
 .footer-contacts {
   text-decoration: none;
-  color: #ffd180;
+  color: #ffffff;
 }

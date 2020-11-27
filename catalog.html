@@ -57,7 +57,7 @@
 
     <main>
       <ul class="breadcrumbs">
-        <li><a href="#"><div class="home-crumbs"></div></a><div class="right-small"></div></li>
+        <li><a href="#"><img src="img/icon-home.svg" width="14px" height="12px" alt="Иконка дома"><span class="visually-hidden">Главная</span></a><div class="right-small"></div></li>
         <li><a href="#">Каталог</a><div class="right-small"></div></li>
         <li><a href="#">Инструмент</a><div class="right-small"></div></li>
         <li><a href="#">Перфораторы</a></li>
@@ -66,20 +66,22 @@
       <h1 class="head-inner">Перфораторы</h1>
 
       <section class="catalog-filter">
-        <h2>ФИЛЬТР:</h2>
-        <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/courses" method="post" oninput="price.value=price.value">
-          <fieldset>
-            <legend class="filter-set">ЦЕНА:</legend>
-            <input type="range" id="price-range" min="0" max="30000" step="1" name="price">
+        <h2 class="catalog-filter-heading form-heading">ФИЛЬТР:</h2>
+        <form class="catalog-filter-form" action="" method="post" oninput="price.value=price.value">
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">ЦЕНА:</legend>
+            <div class="input-price-range">
+              <input type="range" id="price-range" min="0" max="30000" step="1" name="price">
+            </div>
             <div class="price-output">
               <output name="price">0</output>
             </div>
             <div class="price-scope"></div>
             <div class="price-output">30000</div>
           </fieldset>
-          <fieldset>
-            <legend class="filter-set">ПРОИЗВОДИТЕЛИ:</legend>
-            <ul>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">ПРОИЗВОДИТЕЛИ:</legend>
+            <ul class="manufacturer-list">
               <li class="filter-option">
                 <input class="filter-input-checkbox" type="checkbox" id="filter-BOSCH" checked>
                 <label for="filter-BOSCH">BOSCH</label>
@@ -102,8 +104,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="filter-set">ПИТАНИЕ:</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">ПИТАНИЕ:</legend>
              <ul>
                <li class="filter-option">
                  <input class="filter-input-radio" type="radio" name="battery" id="accumulator" value="accumulator" checked>
@@ -111,25 +113,25 @@
                </li>
                <li class="filter-option">
                  <input class="filter-input-radio" type="radio" name="battery" id="network" value="network">
-                 <label for=network">АККУМУЛЯТОРНЫЕ</label>
+                 <label for=network">СЕТЕВЫЕ</label>
                </li>
              </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button class="filter-form-button"type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
 
       <section class="catalog-sort">
-        <div class="catalog-sort-menu">
-          <h2>СОРТИРОВКА:</h2>
-          <ul>
-            <li><a href="#">ПО ЦЕНЕ</a></li>
+        <div class="catalog-filter-heading">
+          <h2 class=" sort-heading">СОРТИРОВКА:</h2>
+          <ul class="sort-item">
+            <li class="sort-current"><a href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
             <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
           </ul>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <ul class="sort-item">
+            <li class="current-triangle"><a href="#"><div class="red-triangle-top"></div></a></li>
+            <li><a href="#"><div class="red-triangle-bottom"></div></a></li>
           </ul>
         </div>
         <div class="catalog-sort-products">
@@ -160,15 +162,14 @@
             </li>
             <li>
                 <div class="products-item">
-                  <div class="new-flag">
                     <h3>
+            <!--       <div class="new-flag">new</div> -->
                     <img src="img/perforator_4.png" width="218" height="170" alt="картинка BOSCH BFG 2000">
                     <a href="catalog-item.html">
                       <span class="product-name">Перфоратор BOSCH BFG 2000</span><br>
                       <div class="product-price">12500 Р.</div>
                     </a>
                     </h3>
-                  </div>
                 </div>
             </li>
           </ul>
