@@ -13,31 +13,20 @@
     <header class="main-header">
       <div class="header-top">
         <div class="container">
-          <a class="header-top-logo" href="#">
-            <img src="img/technomart-logo.png" alt="Логотип интернет-магазин строительных материалов Техномарт" width="220" height="47">
-          </a>
-
-
-
-
+          <a class="header-top-logo" href="#"><img src="img/technomart-logo.png" alt="Логотип интернет-магазин строительных материалов Техномарт" width="220" height="47"></a>
           <form class="header-top-form-search" action="https://echo.htmlacademy.ru" method="get">
               <input class="header-top-search" type="search" id="search" placeholder="Поиск:">
           </form>
-
-
-
-
-
           <div class="header-top-items">
             <p class="header-top-item header-top-bookmark">Закладки: 0</p>
-            <p class="header-top-item header-top-cart"> Корзина: 0</p>
-            <p class="header-top-item header-top-order"> Оформить заказ</p>
+            <p class="header-top-item header-top-cart">Корзина: 0</p>
+            <p class="header-top-item header-top-order">Оформить заказ</p>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="header-middel">
-          <h1 class="header-middel-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+          <h1 class="header-middel-heading">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
           <div class="header-middel-contacts">
             <p class="header-middel-phone">+7 (812) 555-05-55</p>
             <p class="header-middel-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -66,7 +55,7 @@
 
         <section class="promo-blocks">
 
-          <h2 class="visually-hidden">Каталог всех товаров</h2>
+          <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="promo-blocks-first-row promo-blocks-list">
             <li class="promo-blocks-item promo-blocks--materials new-block">
               <p class="promo-blocks-item-name">Материалы</p>
@@ -313,6 +302,7 @@
         </section>
       </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-left-column">
@@ -390,30 +380,36 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
 
-<!-- <div class="company-description-popup">
-  <button class="map-popup" type="button">
-    Закрыть
-  </button>
-<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-  <label for="name">
-    Ваше имя
-  </label><br>
-  <input type="text" id="name" placeholder="Имя Фамилия"><br>
-  <label for="email">
-    Ваш e-mail
-  </label><br>
-  <input type="email" id="email" placeholder="email@example.com"><br>
-  <label for="textarea">
-    Текст письма
-  </label><br>
-  <textarea id="textarea" rows="5">
-  </textarea><br>
-  <input class="write-us-submit" type="submit" value="Отправить">
-  <button class="menu-btn write-us-close" type="button">
-    Закрыть
-  </button>
-</form>
-</div> -->
+    <section class="modal modal-feedback">
+
+      <h2 class="visually-hidden">Форма обратной связи:</h2>
+      <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-feedback-form-wrapper">
+          <p>
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label><br>
+            <input type="email" id="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="textarea">Текст письма:</label><br>
+            <textarea id="textarea" rows="5">В свободной форме</textarea>
+          </p>
+        </div>
+        <div class="modal-feedback-form-button-wrapper">
+          <button class="menu-btn modal-feedback-form-button-submit" type="submit" name="button">Отправить</button>
+        </div>
+      </form>
+        <button class="modal-button-close modal-feedback-form-button-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p><img src="img/map-pop.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+      <button class="modal-button-close modal-map-button-close" type="button">Закрыть</button>
+    </section>
+</html>
