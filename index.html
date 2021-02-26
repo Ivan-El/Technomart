@@ -15,7 +15,7 @@
         <div class="container">
           <a class="header-top-logo" href="#"><img src="img/technomart-logo.png" alt="Логотип интернет-магазин строительных материалов Техномарт" width="220" height="47"></a>
           <form class="header-top-form-search" action="https://echo.htmlacademy.ru" method="get">
-              <input class="header-top-search" type="search" id="search" placeholder="Поиск:">
+            <input class="header-top-search" type="search" id="search" placeholder="Поиск:">
           </form>
           <div class="header-top-items">
             <p class="header-top-item header-top-bookmark">Закладки: 0</p>
@@ -40,7 +40,7 @@
           <ul class="header-bottom-navigation">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
@@ -108,8 +108,6 @@
             </div>
           </div>
 
-
-
         </section>
 
         <section class="popular-products">
@@ -168,8 +166,8 @@
                   <span class="popular-products-list-item-price">12500 Р.</span>
                 </h3>
               </li>
-              </ul>
-            </div>
+            </ul>
+          </div>
         </section>
 
         <section class="popular-manufacturers">
@@ -296,8 +294,15 @@
             <p class="company-description-map-paragraph">
              Вы можете забрать товар сами, заехав в наш офис:
             </p>
-            <img src="img/map.png" width="300" height="158" alt="г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8">
-            <a class="menu-btn company-description-popup-btn" href="#">Заблудились? Напишите нам!</a>
+
+
+
+            <a class="modal-button-open" href="#"><img src="img/map.png" width="300" height="158" alt="г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8"></a>
+
+            <a class="menu-btn company-description-popup-btn modal-button-open" href="#">Заблудились? Напишите нам!</a>
+
+
+
           </div>
         </section>
       </div>
@@ -326,7 +331,7 @@
             <li><a href="">Инструмент</a></li>
             <li><a href="">Спецпредложения</a></li>
           </ul>
-       </div>
+        </div>
     </footer>
     <footer class="footer-copyrights">
       <div class="container">
@@ -381,6 +386,13 @@
       </div>
     </footer>
 
+    <section class="modal modal-map">
+
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p><img src="img/map-pop.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+      <button class="modal-button-close modal-map-button-close" type="button">Закрыть</button>
+    </section>
+
     <section class="modal modal-feedback">
 
       <h2 class="visually-hidden">Форма обратной связи:</h2>
@@ -405,11 +417,5 @@
       </form>
         <button class="modal-button-close modal-feedback-form-button-close" type="button">Закрыть</button>
     </section>
-
-    <section class="modal modal-map">
-
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p><img src="img/map-pop.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-      <button class="modal-button-close modal-map-button-close" type="button">Закрыть</button>
-    </section>
+     <script src="script.js"></script>
 </html>
